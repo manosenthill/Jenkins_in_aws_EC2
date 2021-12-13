@@ -8,12 +8,12 @@ To launch an EC2 instance:
  - Open the Amazon EC2 console by choosing EC2 under Compute from services. 
  - From the Amazon EC2 dashboard, choose Launch Instance.
 
-![EC2 LAUNCH](ec2-launch.png)
+![EC2 LAUNCH](docs/images/ec2-launch.png)
 
 ### Choose an Amazon Machine Image (AMI)
 Amazon Machine Image (AMI) is pre-configured template that contains required software packages,application server including Operating sysytem.You can select an AMI provided by AWS, our user community, or the AWS Marketplace; or you can select one of your own AMIs.
  
-![AMI IMAGE](EC2-AMI.png)
+![AMI IMAGE](docs/images/EC2-AMI.png)
       
 ### Choose an Instance Type 
 Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.Available Instance types are
