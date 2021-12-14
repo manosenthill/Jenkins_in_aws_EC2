@@ -42,5 +42,24 @@ Since we added Amazon linux we must add rules to a security group to enable you 
 -Click Add Rule, and then choose Custom HTTP Rule from the Type list.It always communicates with the 80.Under Source, select anywhere.
 ![security](docs/images/security.png)
 For OUTBOUND Traffic by dafault it allows allows all the traffic to all the ports to all the destinations.This means it allows traffic to any destinations.If we want we can add rules to specify which traffic to leave from the instance.Let it be default here.
+outbound imagege
+Click Review and launch
+review and launch img
+verify here and click Launch.
+###Key-Pair
+Enter a descriptive name for the key pair. Amazon EC2 associates the public key with the name that you specify as the key name. A key name can include up to 255 ASCII characters. It can’t include leading or trailing spaces.
+
+For File format, choose the format in which to save the private key. To save the private key in a format that can be used with OpenSSH, choose pem. To save the private key in a format that can be used with PuTTY, choose ppk.
+
+Select Create key pair.
+
+The private key file is automatically downloaded by your browser.
+The base file name is the name you specified as the name of your key pair, and the file name extension is determined by the file format you chose. 
+Save the private key file in a safe place.
+This is the only chance for you to save the private key file.
+If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.
+###### $ chmod 400 <key_pair_name>.pem
+If you do not set these permissions, then you cannot connect to your instance using this key pair.
+keypair img
 
 
