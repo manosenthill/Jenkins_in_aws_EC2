@@ -117,3 +117,15 @@ Use the following command to display this password:
 copy the password and paste it in the above password section.
 The Jenkins installation script directs you to the Customize Jenkins page. Click Install suggested plugins.
 ![pluginsjenkins](docs/images/jenkins.png)
+Once the installation is complete, Create First Admin User, click Save and Continue.
+![userjenkins](docs/images/username.png)
+![userjenkins](docs/images/finaljen.png)
+![userjenkins](docs/images/finalsetup.png)
+We are now ready to use EC2 instances as Jenkins agents.
+Clean up
+After completing this tutorial, be sure to delete the AWS resources that you created so that you do not continue to accrue charges.
+
+####Delete your EC2 instance
+In the left-hand navigation bar of the Amazon EC2 console, choose Instances.
+
+Right-click on the instance you created earlier and select Terminate.
