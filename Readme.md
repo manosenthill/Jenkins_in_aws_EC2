@@ -125,7 +125,6 @@ We are now ready to use EC2 instances as Jenkins agents.
 Clean up
 After completing this tutorial, be sure to delete the AWS resources that you created so that you do not continue to accrue charges.
 
-####Delete your EC2 instance
+#### Delete your EC2 instance
 In the left-hand navigation bar of the Amazon EC2 console, choose Instances.
-
 Right-click on the instance you created earlier and select Terminate.
