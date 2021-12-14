@@ -32,4 +32,11 @@ Configure the instance to suit your requirements. You can launch multiple instan
 we can attach additional EBS volume or instance store here.we don't need any additional volumes now .
 ![storage](docs/images/storage.png)
 ### Configure Security group
-## setup jenkins
+Security group act as a firewall that controls the inbound and outbound traffic for our instances.
+Since we added Amazon linux we must add rules to a security group to enable you to connect to your Linux instance from your IP address using SSH.
+- Click Add Rule, and then choose SSH from the Type list. Under Source, select anywhere 
+
+
+Click Add Rule, and then choose Custom TCP Rule from the Type list. Under Port Range enter 8080.
+
+Click Create.## setup jenkins
