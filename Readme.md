@@ -39,3 +39,5 @@ Since we added Amazon linux we must add rules to a security group to enable you 
 
 -Click Add Rule, and then choose Custom TCP Rule from the Type list. Under Port Range enter 8080.Under Source, select anywhere.
 -Click Add Rule, and then choose Custom HTTP Rule from the Type list.It always communicates with the 80.Under Source, select anywhere.
+![security](docs/images/security.png)
+
