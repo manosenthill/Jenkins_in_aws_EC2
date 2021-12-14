@@ -33,6 +33,7 @@ we can attach additional EBS volume or instance store here.we don't need any add
 ![storage](docs/images/storage.png)
 ### Configure Security group
 Security group act as a firewall rules that controls the inbound and outbound traffic for our instances.
+#### First we add Inbound traffic rules
 Since we added Amazon linux we must add rules to a security group to enable you to connect to your Linux instance from your IP address using SSH.SSH is a secure conections for our linux instances.It always communicates with a port 22.
 - Click Add Rule, and then choose SSH from the Type list. Under Source, select anywhere to allow all traffic for the specified protocol to reach your instance. 
   This option automatically adds the 0.0.0.0/0 IPv4 CIDR block as the source. This is acceptable for a short time in a test environment, but it's unsafe in           production environments. In production, authorize only a specific IP address or range of addresses to access your instances.
@@ -40,4 +41,6 @@ Since we added Amazon linux we must add rules to a security group to enable you 
 -Click Add Rule, and then choose Custom TCP Rule from the Type list. Under Port Range enter 8080.Under Source, select anywhere.
 -Click Add Rule, and then choose Custom HTTP Rule from the Type list.It always communicates with the 80.Under Source, select anywhere.
 ![security](docs/images/security.png)
+For OUTBOUND Traffic by dafault it allows allows all the traffic to all the ports to all the destinations.This means it allows traffic to any destinations.If we want we can add rules to specify which traffic to leave from the instance.Let it be default here.
+
 
