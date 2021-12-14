@@ -66,5 +66,5 @@ In the left-hand navigation bar, choose Instances to see the status of your inst
 ### Connecting EC2 Instance
 After you launch your instance, you can connect to it and use it the way that you would use your local machine.
 The tool that you use to connect to your Linux instance depends on the operating system running on your computer. If your computer runs Windows, you will connect using PuTTY. If your computer runs Linux or Mac OS X, you will connect using the SSH client. 
-![connect](docs/images/connect.png)
+![connect](docs/images/connectec2.png)
 #### Using SSH to connect our instance
