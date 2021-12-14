@@ -75,3 +75,19 @@ The response will be
 Enter Yes
 ![linux](docs/images/linux.png)
 Yes we are in Linux OS now.we succesfully connected our instance!!
+### Download and install Jenkins
+To download and install Jenkins
+- Add the Jenkins repo using the following command:
+[ec2-user ~]$ sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+- Import a key file from Jenkins-CI to enable installation from the package:
+
+[ec2-user ~]$ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+- use the following command to perform a quick software update:
+
+[ec2-user ~]$ sudo yum update –y
+
+- Install Jenkins:
+
+[ec2-user ~]$ sudo yum install jenkins java-1.8.0-openjdk-devel -y
+
