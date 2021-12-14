@@ -70,3 +70,8 @@ The tool that you use to connect to your Linux instance depends on the operating
 #### Using SSH to connect our instance
 Use the ssh command to connect to the instance. You will specify the private key (.pem) file and ec2-user@public_dns_name.
 ![ssh](docs/images/c1.png)
+The response will be 
+![ssh](docs/images/c2.png)
+Enter Yes
+![linux](docs/images/linux.png)
+Yes we are in Linux OS now.we succesfully connected our instance!!
