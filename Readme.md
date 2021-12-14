@@ -63,7 +63,8 @@ If you do not set these permissions, then you cannot connect to your instance us
 ![kkeypair](docs/images/keypair.png)
 In the left-hand navigation bar, choose Instances to see the status of your instance. Initially, the status of your instance is pending. After the status changes to running, your instance is ready for use.
 ![Finalec2](docs/images/finalec2.png)
-
+### Connecting EC2 Instance
+After you launch your instance, you can connect to it and use it the way that you would use your local machine.
 
 
 
