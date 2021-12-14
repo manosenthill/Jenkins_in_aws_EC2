@@ -91,3 +91,20 @@ To download and install Jenkins
 
 [ec2-user ~]$ sudo yum install jenkins java-1.8.0-openjdk-devel -y
 
+Error: Package: jenkins-2.306-1.1.noarch (jenkins)
+           Requires: daemonize 
+ Run this comment to resolve the above error
+ $ sudo amazon-linux-extras install epel
+ [ec2-user ~]$ sudo systemctl daemon-reload
+ - Start Jenkins as a service:
+
+[ec2-user ~]$ sudo systemctl start jenkins
+
+-You can check the status of the Jenkins service using the command:
+
+[ec2-user ~]$ sudo systemctl status jenkins
+####Configure Jenkins
+Jenkins is now installed and running on our EC2 instance. To configure Jenkins:
+
+Connect to http://<your_server_public_DNS>:8080 from your favorite browser.
+You will be able to access Jenkins through its management interface:
