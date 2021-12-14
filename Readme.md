@@ -26,5 +26,5 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 - Storage Optimized(i-family=IOPS, H=HDD)
 ### Choose Storage
 we can attach additional EBS volume or instance store here.we don't need any additional volumes now .
-![Ec2_storage](docs/images/ec2-launch.png)
+![storage](docs/storage.png)
 ## setup jenkins
