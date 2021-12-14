@@ -60,6 +60,10 @@ This is the only chance for you to save the private key file.
 If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.
 ###### $ chmod 400 <key_pair_name>.pem
 If you do not set these permissions, then you cannot connect to your instance using this key pair.
-keypair img
+![kkeypair](docs/images/keypair.png)
+In the left-hand navigation bar, choose Instances to see the status of your instance. Initially, the status of your instance is pending. After the status changes to running, your instance is ready for use.
+![Finalec2](docs/images/finalec2.png)
+
+
 
 
