@@ -23,4 +23,6 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 - Memory Optimized(r-family=Ram, x=xtreme)
 - Accelerated Computing(g-family=Graphics)
 - Storage Optimized(i-family=IOPS, H=HDD)
+### Choose Storage
+we can attach additional EBS volume or instance store here.we don't need any additional volumes now .
 ## setup jenkins
