@@ -24,6 +24,10 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 - Memory Optimized(r-family=Ram, x=xtreme)
 - Accelerated Computing(g-family=Graphics)
 - Storage Optimized(i-family=IOPS, H=HDD)
+![Instancetype](docs/images/instancetype.png)
+###  Configure Instance Details 
+Configure the instance to suit your requirements. You can launch multiple instances from the same AMI.
+![configure](docs/images/configure.png)
 ### Choose Storage
 we can attach additional EBS volume or instance store here.we don't need any additional volumes now .
 ![storage](docs/storage.png)
