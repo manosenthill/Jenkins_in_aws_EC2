@@ -108,3 +108,12 @@ Jenkins is now installed and running on our EC2 instance. To configure Jenkins:
 
 Connect to http://<your_server_public_DNS>:8080 from your favorite browser.
 You will be able to access Jenkins through its management interface:
+![onlock jenkins](docs/images/unlock.png)
+- As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword.
+
+Use the following command to display this password:
+
+[ec2-user ~]$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+copy the password and paste it in the above password section.
+The Jenkins installation script directs you to the Customize Jenkins page. Click Install suggested plugins.
+![pluginsjenkins](docs/images/jenkins.png)
