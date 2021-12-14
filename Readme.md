@@ -26,9 +26,10 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 - Storage Optimized(i-family=IOPS, H=HDD)
 ![Instancetype](docs/images/instancetype.png)
 ###  Configure Instance Details 
-Configure the instance to suit your requirements. You can launch multiple instances from the same AMI.
+Configure the instance to suit your requirements. You can launch multiple instances from the same AMI.If we want to create our own vpc or subnet we can create it here.
 ![configure](docs/images/configure.png)
 ### Choose Storage
 we can attach additional EBS volume or instance store here.we don't need any additional volumes now .
-![storage](docs/storage.png)
+![storage](docs/images/storage.png)
+### Configure Security group
 ## setup jenkins
