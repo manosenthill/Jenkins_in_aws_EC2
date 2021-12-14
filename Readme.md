@@ -32,8 +32,8 @@ Configure the instance to suit your requirements. You can launch multiple instan
 we can attach additional EBS volume or instance store here.we don't need any additional volumes now .
 ![storage](docs/images/storage.png)
 ### Configure Security group
-Security group act as a firewall that controls the inbound and outbound traffic for our instances.
-Since we added Amazon linux we must add rules to a security group to enable you to connect to your Linux instance from your IP address using SSH.
+Security group act as a firewall rules that controls the inbound and outbound traffic for our instances.
+Since we added Amazon linux we must add rules to a security group to enable you to connect to your Linux instance from your IP address using SSH.SSH is a secure conections for our linux instances.
 - Click Add Rule, and then choose SSH from the Type list. Under Source, select anywhere to allow all traffic for the specified protocol to reach your instance. This option automatically adds the 0.0.0.0/0 IPv4 CIDR block as the source. This is acceptable for a short time in a test environment, but it's unsafe in production environments. In production, authorize only a specific IP address or range of addresses to access your instances.
 
 Click Add Rule, and then choose Custom TCP Rule from the Type list. Under Port Range enter 8080.
