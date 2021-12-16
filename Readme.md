@@ -7,4 +7,4 @@ To Start with you must have Amazon Account,If you don't have click [here](https:
 [EC2 Setup](\docs\ec2_setup.md)
 
 ## Jenkins Installation in EC2
-[Jenkins Setup](\docs\ec2_jenkins_setup.md)
+[Jenkins Setup](/docs/ec2_jenkins_setup.md)
