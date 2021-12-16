@@ -1,0 +1,6 @@
+Create vpc
+create public and private subnets
+create route tables
+associate subnets to the route table
+create internet gateway
+Cteate NAT
