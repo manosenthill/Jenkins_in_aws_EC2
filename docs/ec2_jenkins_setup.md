@@ -27,7 +27,7 @@ Jenkins is now installed and running on our EC2 instance. To configure Jenkins:
 
 Connect to `http://<your_server_public_DNS>:8080` from your favorite browser.
 You will be able to access Jenkins through its management interface:
-![onlock jenkins](docs/images/unlock.png)
+![onlock jenkins](/images/unlock.png)
 
 - As prompted, enter the password found in `/var/lib/jenkins/secrets/initialAdminPassword`
 
@@ -37,12 +37,12 @@ Use the following command to display this password:
 copy the password and paste it in the above password section.
 
 The Jenkins installation script directs you to the Customize Jenkins page. Click Install suggested plugins.
-![pluginsjenkins](docs/images/jenkins.png)
+![pluginsjenkins](/images/jenkins.png)
 
 Once the installation is complete, Create First Admin User, click Save and Continue.
-![userjenkins](docs/images/username.png)
-![userjenkins](docs/images/finaljen.png)
-![userjenkins](docs/images/finalsetup.png)
+![userjenkins](/images/username.png)
+![userjenkins](/images/finaljen.png)
+![userjenkins](/images/finalsetup.png)
 
 We are now ready to use EC2 instances as Jenkins agents.
 
