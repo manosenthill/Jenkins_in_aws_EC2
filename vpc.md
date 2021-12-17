@@ -110,3 +110,17 @@ Make sure that your NACLs and SGs allows the traffic to the internet## Create NA
 ~~~
 
 ![CREATE IGW](docs/images/vpc/igw.png)
+![CREATE IGW](docs/images/vpc/RT-igw.png)
+## Creating NAT Gateway
+NAT gateway used for  our private subnet to communicate to the internet.for example if our database instances  in the private subnets need some software updates  then our private subnets need to access the internet .Here comes NAT gateway.NAT gateway must be in public subnet.
+![CREATE NAT](docs/images/vpc/NAT.png)
+Notice that we choose one of our public subnets for our NAT gateway.
+Next step is to connect our public route table to our InternetGateway and our private subnets to our NAT gateway.
+![RT-IGW](docs/images/vpc/RT-igw.png)
+Finally for the Public subnets 
+- go to the Subnet action
+- Modify auto-assign ip setting
+- Enable auto-assign IPV4 address
+For the VPC
+ -Edit DNS Hostname
+
