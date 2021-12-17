@@ -80,17 +80,22 @@ Repeat the steps forsecond  public subnet as before.
 Here the IP range from
 10.0.0.48/28
 ![CREATE subnets](docs/images/vpc/public-b.png)
-## creating Route Tables
-~~
-A route table contains a set of rules, called routes, that are used to determine where the data packets of the network traffic are directed.
-Each subnet in your VPC must be associated with a route table. 
-The VPC has a main route table and any subnet by default is associated with it.
-Custom route tables can be defined and associated with one or more subnets.
-Each route in a route table consists of a target and destination. For example – Traffic Destined for 10.0.0.24/28 is Targetted for Internet Gateway (IGW)
-The destinations of route tables are either CIDR blocks or prefix lists (in case of VPC gateway endpoints).
-The targets of route table could be Internet gateways (IGW), NAT gateways, egress-only gateways(EIGW), Elastic Network Interfaces (ENIs),  Virtual Private Gateways(VGW), VPC gateway endpoints and VPC peers.
-~~
-## associate subnets to the route table
+## Creating Route Tables
+#### Route Table
+~~~
+- A route table contains a set of rules, called routes, that are used to determine where the data packets of the network traffic are directed.
+- Each subnet in your VPC must be associated with a route table. 
+- The VPC has a main route table and any subnet by default is associated with it.
+- Custom route tables can be defined and associated with one or more subnets.
+- Each route in a route table consists of a target and destination. For example – Traffic Destined for 10.0.0.24/28 is Targetted for Internet Gateway (IGW)
+- The destinations of route tables are either CIDR blocks or prefix lists (in case of VPC gateway endpoints).
+- The targets of route table could be Internet gateways (IGW), NAT gateways, egress-only gateways(EIGW), Elastic Network Interfaces (ENIs),  Virtual Private      Gateways(VGW), VPC gateway endpoints and VPC peers.
+~~~
+We are now going to have two route tables.one for private subnets and one for public subnets
+![CREATE subnets](docs/images/vpc/public_route_table.png)
+By default there is a main route table for our vpc.so here we rename it as public-RT for public route table.
+Next Create another route table for our private subnets as shown below
+![CREATE subnets](docs/images/vpc/private-rt.png)## associate subnets to the route table
 
 ## create internet gateway
 ## Create NAT Gateway
