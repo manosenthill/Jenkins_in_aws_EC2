@@ -1,23 +1,22 @@
 Creating VPC,Subnets,Internet Gateway and NAT gateway
-##Creating VPC
-VPC-A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud.
+
+## Creating VPC
+VPC- A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud.
 To create our own vpc
 Go to the amazon console
 In the search services box  type VPC
-      VPC HOME IMAAGE
-      Click Your VPC
-      Click Create VPC
-      CREATE VPC IMG
-      
-      #### CIDR
-      Classless Inter-Domain Routing (CIDR) blocks are for specifying a range to IP addresses in format of IPv4 or IPv6.
-      General format for CIDR Blocks: x.y.z.t/p
-      x, y, z and t are numbers from 0 to 255. Basically, each represents an 8 bit binary number. That's why it is range is up to 255. Combination of this numbers becomes an IPv4 IP address that must be unique to be able to identify a specific instance.
-      In case of AWS, p is a number from 16 to 28. It represents the number of bits that are inherited from given IP address.
-      For example: 10.0.0.0/16 represents an IP address in following format: 10.0.x.y where x and y are any number from 0 to 255. 
-      So, actually it represents a range of IP addresses, starting from 10.0.0.0 to 10.0.255.255.
+![VPC HOME IMAAGE]()
+Click Your VPC
+Click Create VPC
+![CREATE VPC IMG]
+## CIDR
+Classless Inter-Domain Routing(CIDR) blocks are for specifying a range to IP addresses in format of IPv4 or IPv6.General format for CIDR Blocks: x.y.z.t/p
+x, y, z and t are numbers from 0 to 255. Basically, each represents an 8 bit binary number. That's why it is range is up to 255. Combination of this numbers becomes an IPv4 IP address that must be unique to be able to identify a specific instance.
+In case of AWS, p is a number from 16 to 28. It represents the number of bits that are inherited from given IP address.
+For example: 10.0.0.0/16 represents an IP address in following format: 10.0.x.y where x and y are any number from 0 to 255. 
+So, actually it represents a range of IP addresses, starting from 10.0.0.0 to 10.0.255.255.
 
-      However for each CIDR block, AWS prohibits 5 possible IP addresses. Those are the first 4 available addresses and the last available address. In this case:
+However for each CIDR block, AWS prohibits 5 possible IP addresses. Those are the first 4 available addresses and the last available address. In this case:
 
 10.0.0.0: Network address
 10.0.0.1: Reserved for VPC router
@@ -31,6 +30,7 @@ suppose the IPV4 CIDR is 10.0.0.0/26
 so we have 64 avilable ip addresses.
 It starts with 10.0.0.0
 Ends with  10.0.0.63
+
 ## Creating Subnets
 Sunbnets are Range of IP Addresses.Currently wecan create 200 subnets per VPC. If you would like to create more, we have to submit a case at the support center.
 subnets can't span across availability zones.
