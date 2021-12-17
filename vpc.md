@@ -80,9 +80,17 @@ Repeat the steps forsecond  public subnet as before.
 Here the IP range from
 10.0.0.48/28
 ![CREATE subnets](docs/images/vpc/public-b.png)
-## create Route Tables
-
-
+## creating Route Tables
+~~
+A route table contains a set of rules, called routes, that are used to determine where the data packets of the network traffic are directed.
+Each subnet in your VPC must be associated with a route table. 
+The VPC has a main route table and any subnet by default is associated with it.
+Custom route tables can be defined and associated with one or more subnets.
+Each route in a route table consists of a target and destination. For example – Traffic Destined for 10.0.0.24/28 is Targetted for Internet Gateway (IGW)
+The destinations of route tables are either CIDR blocks or prefix lists (in case of VPC gateway endpoints).
+The targets of route table could be Internet gateways (IGW), NAT gateways, egress-only gateways(EIGW), Elastic Network Interfaces (ENIs),  Virtual Private Gateways(VGW), VPC gateway endpoints and VPC peers.
+~~
 ## associate subnets to the route table
+
 ## create internet gateway
 ## Create NAT Gateway
