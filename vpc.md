@@ -6,7 +6,7 @@ To create our own vpc
 Go to the amazon console
 In the search services box  type VPC
 
-![VPC HOME IMAAGE](docs/images/vpc/VPC home.png)
+![VPC HOME IMAAGE](docs/images/vpc/VPC_home.png)
 
 Click Your VPC
 
