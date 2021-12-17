@@ -92,10 +92,13 @@ Here the IP range from
 - The targets of route table could be Internet gateways (IGW), NAT gateways, egress-only gateways(EIGW), Elastic Network Interfaces (ENIs),  Virtual Private      Gateways(VGW), VPC gateway endpoints and VPC peers.
 ~~~
 We are now going to have two route tables.one for private subnets and one for public subnets
-![CREATE subnets](docs/images/vpc/public_route_table.png)
+![CREATE RT](docs/images/vpc/public_route_table.png)
 By default there is a main route table for our vpc.so here we rename it as public-RT for public route table.
 Next Create another route table for our private subnets as shown below
-![CREATE subnets](docs/images/vpc/private-rt.png)## associate subnets to the route table
+![CREATE RT](docs/images/vpc/private-rt.png)
+~~~After creating the subnets we have to associate the subnets to the route table.
+![Associate subnets](docs/images/vpc/subnetasso.png)
+## associate subnets to the route table
 
 ## create internet gateway
 ## Create NAT Gateway
