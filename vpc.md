@@ -80,7 +80,9 @@ Repeat the steps forsecond  public subnet as before.
 Here the IP range from
 10.0.0.48/28
 ![CREATE subnets](docs/images/vpc/public-b.png)
-## Creating Route Tables
+we assign each subnets 16 IP addresses but each will take only 11 IP address.Because 5 Ip Address for reserved for internal purpose as mentioned earlier.
+look at here
+![CREATE subnets](docs/images/vpc/available_ip.png)## Creating Route Tables
 #### Route Table
 ~~~
 - A route table contains a set of rules, called routes, that are used to determine where the data packets of the network traffic are directed.
