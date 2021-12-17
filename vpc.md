@@ -54,7 +54,7 @@ On the VPC Dashboard
 
 click subnets
 #### Creating first private subnet
-![CREATE subnets](docs/images/vpc/private_a.png)
+![CREATE subnets](docs/images/vpc/private-a.png)
 
 In the create subnet wizard choose your VPC
 
@@ -64,13 +64,25 @@ Give the IP range for our first subnet
 10.0.0.0/28
 2^(32-28)
 2^(4)=16 IP address for our FIRST PrIVATE SUBNET.
-#### Creating second private subnet
+### Creating second private subnet
 Repeat the steps above for creating our second subnet.
 Here the IP range
 10.0.0.16/28
 our first subnet range from 0-15.So our second subnet starts with 16 and ends with 32.
-![CREATE subnets](docs/images/vpc/private_b.png)
-## create route tables
+![CREATE subnets](docs/images/vpc/private-b.png)
+### Creating Create First Public subnet
+Repeat the steps above for public subnet.
+Here the IP range from
+10.0.0.32/28
+![CREATE subnets](docs/images/vpc/public-a.png)
+### Creating Second Public subnet
+Repeat the steps forsecond  public subnet as before.
+Here the IP range from
+10.0.0.48/28
+![CREATE subnets](docs/images/vpc/public-b.png)
+## create Route Tables
+
+
 ## associate subnets to the route table
 ## create internet gateway
 ## Create NAT Gateway
