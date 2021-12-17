@@ -98,7 +98,15 @@ Next Create another route table for our private subnets as shown below
 ![CREATE RT](docs/images/vpc/private-rt.png)
 ~~~After creating the subnets we have to associate the subnets to the route table.
 ![Associate subnets](docs/images/vpc/subnetasso.png)
-## associate subnets to the route table
+- Associate the private subnets with private_RT route table.
+## Creating Internet Gateway
+An Internet Gateway is a  VPC component that allows the instance in the VPC to communicate to the internet.
+~~~
+Create an Internet Gateway
+Attach it to VPC
+Add route in your subnet’s route table to point to the internet
+Your instance must need a publicly routable IP
+Make sure that your NACLs and SGs allows the traffic to the internet## Create NAT Gateway
+~~~
 
-## create internet gateway
-## Create NAT Gateway
+![CREATE IGW](docs/images/vpc/igw.png)
